@@ -7,7 +7,7 @@ from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
 
-import cert_chain
+import verifierApp.src.cert_chain as cert_chain
 
 def get_certificate(host, port=443, timeout=10):
     context = ssl.create_default_context()
